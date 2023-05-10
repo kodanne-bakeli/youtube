@@ -12,17 +12,19 @@
 </head>
 
 <body>
-    <header class="fixed-top bg-white">
+    <header class="sticky-top bg-white">
 
         <nav class="navbar navbar-expand-lg navbar-light ">
 
-            <div class="container-fluid">
-                <button class="btn border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-                    aria-controls="offcanvasExample">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="#"><img src="images/téléchargement.png" alt="" class="img-fluid"
-                        width="50%"></a>
+            <div class="container-fluid d-flex flex-nowrap">
+                <div>
+                    <button class="btn border" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/téléchargement.png" alt="" class="img-fluid"
+                            width="50%"></a>
+                </div>
                 <form action="" class="d-flex align-items-center ">
                     <div class="input-group rounded-pill">
                         <span class="input-group-text "><i class="fas fa-search"></i></span>
@@ -32,9 +34,9 @@
                 </form>
                 <div class="navbar-nav">
                     <div class="d-flex align-items-center justify-content-end">
-                        <i class="fa-solid fa-video mx-1"></i>
-                        <i class="fa-solid fa-bell mx-1"></i>
-                        <img src="images/unnamed (2).jpg" alt="" class="img-fluid rounded-circle" width="20%">
+                        <i class="fa-solid fa-video mx-2"></i>
+                        <i class="fa-solid fa-bell mx-2"></i>
+                        <img src="images/unnamed (2).jpg" alt="" class="img-fluid rounded-circle mx-2" width="20%">
                     </div>
 
                 </div>
@@ -43,18 +45,19 @@
         </nav>
         <nav class="d-flex justify-content-center overflow-auto my-2 ms-4">
             <a href="" class="btn btn-dark mx-1 rounded-pill">Tous</a>
-            <a href="" class="btn border border-dark mx-1 rounded-pill">Mix</a>
-            <a href="" class="btn border border-dark mx-1 rounded-pill">Music</a>
-            <a href="" class="btn border border-dark mx-1 rounded-pill">En direct</a>
-            <a href="" class="btn border border-dark mx-1 rounded-pill">jeux vidéo</a>
-            <a href="" class="btn border border-dark mx-1 rounded-pill">Feuilles de style en cascade</a>
-            <a href="" class="btn border border-dark mx-1 rounded-pill">Lo-fi</a>
+            <a href="" class="btn border border-dark m-1 rounded-pill">Mix</a>
+            <a href="" class="btn border border-dark m-1 rounded-pill">Music</a>
+            <a href="" class="btn border border-dark m-1 rounded-pill">En direct</a>
+            <a href="" class="btn border border-dark m-1 rounded-pill">jeux vidéo</a>
+            <a href="" class="btn border border-dark m-1 rounded-pill">gaming</a>
+            <a href="" class="btn border border-dark m-1 rounded-pill">Lo-fi</a>
 
         </nav>
     </header>
     <!---------------offcanvas----------->
 
-    <div class="offcanvas offcanvas-start overflow-auto" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas offcanvas-start overflow-auto w-25" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasExampleLabel"><img src="images/téléchargement.png" alt=""
                     class="img-fluid" width="40%"></h5>
@@ -73,10 +76,12 @@
                                 class="style-scope yt-icon"></path>
                         </g>
                     </svg>abonnements</a>
-                <hr>
-                <a class="nav-link text-dark p-2" href=""><i class="fa-solid fa-clock-rotate-left d-block"></i> historique</a>
+                <hr width="50%">
+                <a class="nav-link text-dark p-2" href=""><i class="fa-solid fa-clock-rotate-left d-block"></i>
+                    historique</a>
                 <a class="nav-link text-dark p-2" href=""><i class="fa-solid fa-bars d-block"></i> playlist</a>
-                <a class="nav-link text-dark p-2" href=""><i class="fa-solid fa-clock d-block"></i> à regarder plus tard</a>
+                <a class="nav-link text-dark p-2" href=""><i class="fa-solid fa-clock d-block"></i> à regarder plus
+                    tard</a>
                 <a class="nav-link text-dark p-2" href=""><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
                         focusable="false" class="style-scope yt-icon"
                         style="pointer-events: none; display: block; width: 10%; height: 10%;">
@@ -86,16 +91,16 @@
                                 class="style-scope yt-icon"></path>
                         </g>
                     </svg>Bibliothéque</a>
-                <hr>
+
 
             </div>
         </div>
     </div>
     <!------------main-------->
-    <main class="container-fluid py-5 my-5">
+    <main class="container-fluid py-4">
         <div class="row py-5 my-2">
             <div class="col-2 d-none d-md-block">
-                <div class="fixed-top mt-5 pt-5" id="offcanvas">
+                <div class="fixed-top mt-5 pt-5 overflow-auto" id="offcanvas">
                     <a class="nav-link text-dark p-2" href=""><i class="fa-solid fa-house d-block"></i> Home</a>
                     <a class="nav-link text-dark p-2" href=""><i class="fa-solid fa-bolt d-block"></i> Shorts</a>
                     <a class="nav-link text-dark p-2" href=""><svg viewBox="0 0 24 24"
@@ -111,7 +116,8 @@
                     <a class="nav-link text-dark p-2" href=""><i class="fa-solid fa-clock-rotate-left d-block"></i>
                         historique</a>
                     <a class="nav-link text-dark p-2" href=""><i class="fa-solid fa-bars d-block"></i> playlist</a>
-                    <a class="nav-link text-dark p-2" href=""><i class="fa-solid fa-clock d-block"></i> à regarder <br> plus tard</a>
+                    <a class="nav-link text-dark p-2 text-break" href=""><i class="fa-solid fa-clock d-block"></i> à
+                        regarder plus tard</a>
                     <a class="nav-link text-dark p-2" href=""><svg viewBox="0 0 24 24"
                             preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
                             style="pointer-events: none; display: block; width: 25px; height: 100%;">
@@ -129,7 +135,28 @@
             <div class="col">
                 <div class="row row-cols-1 row-cols-md-2 g-4">
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card border-0">
+                        <div class="card container border-0">
+                            <a href="https://www.youtube.com/watch?v=PkZNo7MFNFg&t=6251s">
+                                <img src="images/unnamed.jpg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body">
+                                <div class="card-title row">
+                                    <div class="col-2">
+                                        <img src="images/unnamed (1).jpg" alt="" class="img-fluid rounded-circle">
+                                    </div>
+                                    <div class="col">
+                                        <h5> Learn Javascript- Full Course for Beginners</h5>
+                                    </div>
+                                </div>
+                                <div class="card-text">
+                                    <p>freeCodeCamp.org <i class="fa-solid fa-circle-check"></i></p>
+                                    <p class="">15M views<i class="fa-solid fa-point"></i> 4years ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card border-0 container">
                             <a href="https://www.youtube.com/watch?v=PkZNo7MFNFg&t=6251s">
                                 <img src="images/unnamed.jpg" class="card-img-top" alt="...">
                             </a>
@@ -150,7 +177,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card border-0">
+                        <div class="card border-0 container">
                             <a href="https://www.youtube.com/watch?v=PkZNo7MFNFg&t=6251s">
                                 <img src="images/unnamed.jpg" class="card-img-top" alt="...">
                             </a>
@@ -171,28 +198,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card border-0">
-                            <a href="https://www.youtube.com/watch?v=PkZNo7MFNFg&t=6251s">
-                                <img src="images/unnamed.jpg" class="card-img-top" alt="...">
-                            </a>
-                            <div class="card-body">
-                                <div class="card-title row">
-                                    <div class="col-2">
-                                        <img src="images/unnamed (1).jpg" alt="" class="img-fluid rounded-circle">
-                                    </div>
-                                    <div class="col">
-                                        <h5> Learn Javascript- Full Course for Beginners</h5>
-                                    </div>
-                                </div>
-                                <div class="card-text">
-                                    <p>freeCodeCamp.org <i class="fa-solid fa-circle-check"></i></p>
-                                    <p>15M views 4years ago</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card border-0">
+                        <div class="card border-0 container">
                             <a href="https://www.youtube.com/watch?v=PkZNo7MFNFg&t=6251s">
                                 <img src="images/unnamed.jpg" class="card-img-top" alt="..."></a>
                             <div class="card-body">
@@ -212,7 +218,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card border-0">
+                        <div class="card border-0 container">
                             <a href="https://www.youtube.com/watch?v=PkZNo7MFNFg&t=6251s">
                                 <img src="images/unnamed.jpg" class="card-img-top" alt="..."></a>
                             <div class="card-body">
@@ -232,7 +238,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card border-0">
+                        <div class="card border-0 container">
                             <a href="https://www.youtube.com/watch?v=PkZNo7MFNFg&t=6251s">
                                 <img src="images/unnamed.jpg" class="card-img-top" alt="..."></a>
                             <div class="card-body">
@@ -252,7 +258,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card border-0">
+                        <div class="card border-0 container">
                             <a href="https://www.youtube.com/watch?v=PkZNo7MFNFg&t=6251s">
                                 <img src="images/unnamed.jpg" class="card-img-top" alt="..."></a>
                             <div class="card-body">
@@ -272,7 +278,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card border-0">
+                        <div class="card border-0 container">
                             <a href="https://www.youtube.com/watch?v=PkZNo7MFNFg&t=6251s">
                                 <img src="images/unnamed.jpg" class="card-img-top" alt="..."></a>
                             <div class="card-body">
@@ -293,7 +299,7 @@
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card border-0">
+                        <div class="card border-0 container">
                             <a href="https://www.youtube.com/watch?v=PkZNo7MFNFg&t=6251s">
                                 <img src="images/unnamed.jpg" class="card-img-top" alt="..."></a>
                             <div class="card-body">
@@ -313,7 +319,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card border-0">
+                        <div class="card border-0 container">
                             <a href="https://www.youtube.com/watch?v=PkZNo7MFNFg&t=6251s">
                                 <img src="images/unnamed.jpg" class="card-img-top" alt="..."></a>
                             <div class="card-body">
@@ -333,7 +339,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card border-0">
+                        <div class="card border-0 container">
                             <a href="https://www.youtube.com/watch?v=PkZNo7MFNFg&t=6251s">
                                 <img src="images/unnamed.jpg" class="card-img-top" alt="..."></a>
                             <div class="card-body">
@@ -353,7 +359,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card border-0">
+                        <div class="card border-0 container">
                             <a href="https://www.youtube.com/watch?v=PkZNo7MFNFg&t=6251s">
                                 <img src="images/unnamed.jpg" class="card-img-top" alt="..."></a>
                             <div class="card-body">
@@ -376,8 +382,8 @@
 
             </div>
         </div>
-        
-        
+
+
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
